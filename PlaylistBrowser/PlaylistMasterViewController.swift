@@ -9,17 +9,20 @@
 import UIKit
 
 class PlaylistMasterViewController: UIViewController {
-
-    @IBOutlet weak var button: UIButton!
+    
+    var playlistArray: [UIImageView] = []
     
     @IBOutlet weak var playlistImageView0: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.setTitle("Press me", forState: .Normal)
-        let playlist = Playlist(index: 0)
-        playlistImageView0.image = playlist.icon
-        
+        playlistArray.append(playlistImageView0)
+        for index in 0..<playlistArray.count {
+            let playlist = Playlist(index: index)
+            let playlistImageView = playlistArray[index]
+            playlistImageView.image = playlist.icon
+            playlistImageView.backgroundColor = playlist.backgroundColour
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,11 +31,17 @@ class PlaylistMasterViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showPlaylistDetail" {
-            let playlistDetailController = segue.destinationViewController as! PlaylistDetailViewController
-            playlistDetailController.playlist = Playlist(index: 0)
+        if segue.identifier == "showPlaylistDetailSegue" {
+            let playlistImageView = sender!.view as! UIImageView
+            if let index = find(playlistArray, playlistImageView){
+                let playlistDetailController = segue.destinationViewController as! PlaylistDetailViewController
+                playlistDetailController.playlist = Playlist(index: index)
+            }
         }
     }
 
+    @IBAction func showPlaylistDetail(sender: AnyObject) {
+        performSegueWithIdentifier("showPlaylistDetailSegue", sender: sender)
+    }
 }
 
