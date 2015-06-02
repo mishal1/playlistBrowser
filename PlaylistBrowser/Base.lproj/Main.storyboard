@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="bzo-1M-uuT">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Playlists-->
@@ -16,34 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="TsG-Dg-StV">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
-                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="1ln-Kh-vky"/>
-                                    <constraint firstAttribute="height" constant="200" id="t5M-W9-lDp"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gm-UQ-T75">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gm-UQ-T75">
                                 <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="ZlY-4C-Ooj" kind="push" identifier="showPlaylistDetail" id="491-gb-cpw"/>
                                 </connections>
                             </button>
+                            <imageView autoresizesSubviews="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="TsG-Dg-StV">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="TsG-Dg-StV" secondAttribute="centerY" id="TJd-KP-e2n"/>
-                            <constraint firstAttribute="centerX" secondItem="0Gm-UQ-T75" secondAttribute="centerX" id="Zlt-Hs-Oke"/>
-                            <constraint firstAttribute="centerX" secondItem="TsG-Dg-StV" secondAttribute="centerX" id="yda-E7-9aO"/>
+                            <constraint firstItem="0Gm-UQ-T75" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="121" id="FoU-h9-2zv"/>
+                            <constraint firstAttribute="centerX" secondItem="0Gm-UQ-T75" secondAttribute="centerX" id="hIw-Q5-Szz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Gm-UQ-T75" secondAttribute="trailing" constant="121" id="jIo-7g-76T"/>
+                            <constraint firstItem="x3l-JM-tSp" firstAttribute="top" secondItem="0Gm-UQ-T75" secondAttribute="bottom" constant="146" id="wwL-z2-TeT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="1yO-dx-hbs"/>
                     <connections>
                         <outlet property="button" destination="0Gm-UQ-T75" id="dK8-0p-cXI"/>
+                        <outlet property="playlistImageView0" destination="TsG-Dg-StV" id="mOX-8b-VPz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -104,7 +103,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="coffee" width="53" height="107"/>
+        <image name="placeholder" width="66" height="73"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
