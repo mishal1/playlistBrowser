@@ -14,6 +14,7 @@
 		D0F333EB1B1DD5E5000969E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F333E91B1DD5E5000969E4 /* LaunchScreen.xib */; };
 		D0F333F71B1DD5E5000969E4 /* PlaylistBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333F61B1DD5E5000969E4 /* PlaylistBrowserTests.swift */; };
 		D0F334011B1DD8FA000969E4 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F334001B1DD8FA000969E4 /* PlaylistDetailViewController.swift */; };
+		D0F334031B1DEFE7000969E4 /* MusicLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F334021B1DEFE7000969E4 /* MusicLibrary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		D0F333F51B1DD5E5000969E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0F333F61B1DD5E5000969E4 /* PlaylistBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistBrowserTests.swift; sourceTree = "<group>"; };
 		D0F334001B1DD8FA000969E4 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
+		D0F334021B1DEFE7000969E4 /* MusicLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLibrary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				D0F333E91B1DD5E5000969E4 /* LaunchScreen.xib */,
 				D0F333DE1B1DD5E5000969E4 /* Supporting Files */,
 				D0F334001B1DD8FA000969E4 /* PlaylistDetailViewController.swift */,
+				D0F334021B1DEFE7000969E4 /* MusicLibrary.swift */,
 			);
 			path = PlaylistBrowser;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				D0F334011B1DD8FA000969E4 /* PlaylistDetailViewController.swift in Sources */,
 				D0F333E31B1DD5E5000969E4 /* PlaylistMasterViewController.swift in Sources */,
 				D0F333E11B1DD5E5000969E4 /* AppDelegate.swift in Sources */,
+				D0F334031B1DEFE7000969E4 /* MusicLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

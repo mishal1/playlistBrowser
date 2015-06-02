@@ -16,8 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gm-UQ-T75">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coffee" translatesAutoresizingMaskIntoConstraints="NO" id="TsG-Dg-StV">
+                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="1ln-Kh-vky"/>
+                                    <constraint firstAttribute="height" constant="200" id="t5M-W9-lDp"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gm-UQ-T75">
+                                <rect key="frame" x="137" y="392" width="46" height="30"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,10 +35,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.62707170460414208" green="0.95713677968611255" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstAttribute="centerY" secondItem="TsG-Dg-StV" secondAttribute="centerY" id="TJd-KP-e2n"/>
                             <constraint firstAttribute="centerX" secondItem="0Gm-UQ-T75" secondAttribute="centerX" id="Zlt-Hs-Oke"/>
-                            <constraint firstAttribute="centerY" secondItem="0Gm-UQ-T75" secondAttribute="centerY" id="inP-kr-ovz"/>
+                            <constraint firstAttribute="centerX" secondItem="TsG-Dg-StV" secondAttribute="centerX" id="yda-E7-9aO"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Playlists" id="1yO-dx-hbs"/>
@@ -95,6 +103,9 @@
             <point key="canvasLocation" x="74" y="294"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="coffee" width="53" height="107"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
