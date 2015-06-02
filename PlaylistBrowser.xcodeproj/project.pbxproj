@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D0F333E11B1DD5E5000969E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333E01B1DD5E5000969E4 /* AppDelegate.swift */; };
-		D0F333E31B1DD5E5000969E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333E21B1DD5E5000969E4 /* ViewController.swift */; };
+		D0F333E31B1DD5E5000969E4 /* PlaylistMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333E21B1DD5E5000969E4 /* PlaylistMasterViewController.swift */; };
 		D0F333E61B1DD5E5000969E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F333E41B1DD5E5000969E4 /* Main.storyboard */; };
 		D0F333E81B1DD5E5000969E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F333E71B1DD5E5000969E4 /* Images.xcassets */; };
 		D0F333EB1B1DD5E5000969E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0F333E91B1DD5E5000969E4 /* LaunchScreen.xib */; };
 		D0F333F71B1DD5E5000969E4 /* PlaylistBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F333F61B1DD5E5000969E4 /* PlaylistBrowserTests.swift */; };
+		D0F334011B1DD8FA000969E4 /* PlaylistDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0F334001B1DD8FA000969E4 /* PlaylistDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +30,14 @@
 		D0F333DB1B1DD5E5000969E4 /* PlaylistBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaylistBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F333DF1B1DD5E5000969E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0F333E01B1DD5E5000969E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0F333E21B1DD5E5000969E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0F333E21B1DD5E5000969E4 /* PlaylistMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistMasterViewController.swift; sourceTree = "<group>"; };
 		D0F333E51B1DD5E5000969E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0F333E71B1DD5E5000969E4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0F333EA1B1DD5E5000969E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D0F333F01B1DD5E5000969E4 /* PlaylistBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylistBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F333F51B1DD5E5000969E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0F333F61B1DD5E5000969E4 /* PlaylistBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistBrowserTests.swift; sourceTree = "<group>"; };
+		D0F334001B1DD8FA000969E4 /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				D0F333E01B1DD5E5000969E4 /* AppDelegate.swift */,
-				D0F333E21B1DD5E5000969E4 /* ViewController.swift */,
+				D0F333E21B1DD5E5000969E4 /* PlaylistMasterViewController.swift */,
 				D0F333E41B1DD5E5000969E4 /* Main.storyboard */,
 				D0F333E71B1DD5E5000969E4 /* Images.xcassets */,
 				D0F333E91B1DD5E5000969E4 /* LaunchScreen.xib */,
 				D0F333DE1B1DD5E5000969E4 /* Supporting Files */,
+				D0F334001B1DD8FA000969E4 /* PlaylistDetailViewController.swift */,
 			);
 			path = PlaylistBrowser;
 			sourceTree = "<group>";
@@ -212,7 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F333E31B1DD5E5000969E4 /* ViewController.swift in Sources */,
+				D0F334011B1DD8FA000969E4 /* PlaylistDetailViewController.swift in Sources */,
+				D0F333E31B1DD5E5000969E4 /* PlaylistMasterViewController.swift in Sources */,
 				D0F333E11B1DD5E5000969E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

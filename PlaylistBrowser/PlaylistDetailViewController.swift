@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PlaylistDetailViewController.swift
 //  PlaylistBrowser
 //
 //  Created by Mishal Islam on 02/06/2015.
@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PlaylistDetailViewController: UIViewController {
 
+    @IBOutlet weak var buttonPressLabel: UILabel!
+    
+    var segueLabelText: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        buttonPressLabel.text = segueLabelText
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
 
 }
-
